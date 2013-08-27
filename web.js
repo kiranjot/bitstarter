@@ -4,7 +4,7 @@ app.use(express.logger());
 var fs= require('fs');
 var datafile=fs.readFileSync('index.html','utf8');
 app.get('/', function(request, response) {
-  response.send("Trying to read from file" + datafile);
+  response.send(datafile);
 });
 
 var port = process.env.PORT || 5000;
