@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.logger());
-var fs= require('fs');
+var fs= require('fs','utf8');
 var datafile=fs.readFile('index.html');
 app.get('/', function(request, response) {
   response.send("Trying to read from file" + datafile);
