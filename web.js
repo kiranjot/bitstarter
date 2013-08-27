@@ -4,7 +4,7 @@ app.use(express.logger());
 var fs= require('fs');
 var datafile=fs.readFile('index.html');
 app.get('/', function(request, response) {
-  response.send(datafile);
+  response.send("Trying to read from file" + datafile);
 });
 
 var port = process.env.PORT || 5000;
