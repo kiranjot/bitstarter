@@ -1,0 +1,5 @@
+
+1) CSS Implement to get some skills. .20.
+2) PHP Basics. .10.
+3) JS Basics .7.
+ 
